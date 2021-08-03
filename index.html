@@ -1,0 +1,103 @@
+<html>
+<head>
+    <title>Google-homepage</title>
+<style>
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{float: left;}
+
+li a{display:block;
+color: #EEEEEE;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover { background-color: #787a91}
+
+
+body{background-color: #0f044c;}
+ 
+
+
+
+#image {
+text-align: center;
+margin: 100px 100px 10px 100px;
+}
+
+
+*{ box-sizing: border-box;}
+
+.searchbar{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form.searchbar input[type=text]{
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #787a91;
+    float: left;
+    width: 80%;
+    background: #eeeeee;
+    
+}
+
+form.searchbar button{
+    float:left; 
+    width: 20%;
+    padding: 10px;
+    background: #787a91;
+color: #EEEEEE;
+font-size: 17px;
+border: 1px solid grey;
+border-left: none;
+cursor: pointer;
+} 
+
+form.searchbar button:hover {
+background: #141e61;
+}
+
+form.searchbar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
+</head>
+
+
+<body>
+<ul> 
+<li><a class="active" href="#about">About</a></li>
+<li><a href="#store">Store</a></li>
+<li><a href="#gmail">Gmail</a></li>
+<li style="float:right"> <a href="#images">Images</a></li>
+<li style="float:right"> <a href="sign-in">Sign In</a></li>
+</ul>
+
+<div id="image">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> 
+</div>
+
+<form class="searchbar"
+action="action_page.php">
+<input type="text"
+placeholder="Search..."
+name="Search">
+<button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
